@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
+}
+
+#piano {
+  display: flex;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.key {
+  border-radius: 0 0 6px 6px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 15px;
+}
+.white {
+  width: 76px;
+  height: 295px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.black {
+  width: 40px;
+  height: 195px;
+  margin: 0 -20px;
+  background-color: black;
+  z-index: 1;
+}
+
+.key:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 10px -10px 30px -20px inset;
+}
+
+#info {
+  width: 100%;
+  margin-top: 50px;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-size: 1.2rem;
+}
